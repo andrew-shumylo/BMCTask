@@ -1,0 +1,48 @@
+Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 34703
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+
+============================
+Visit Base URL
+----------------------------
+Execute 1-st test
+USING Page-Object Pattern
+BMC Test Task.
+Selenium WebDriver UI
+Part -A-
+Add to Cart test:
+1.In the categories menu open Computer
+2.Select Desktops
+3.Set Display to "4" per page
+4.Quantity of products displayed per page is 4
+5.Sort "Price: High to Low"
+6.Click add to cart the most expensive item
+7.Check the item is in the shopping cart
+!!! TEST PASS !!!
+
+============================
+Visit 2-nd Base URL
+----------------------------
+Execute 2-nd test
+USING Simple way for implementation
+BMC Test Task.
+Selenium WebDriver UI
+Part -B-
+Modificate product and Add to Cart test(Check & Remove):
+1.Set Processor: Fast
+2.Set RAM: 8GB
+3.Select all available software
+4.Click "Add to cart"
+5.Check the items is there
+6.Check the price is correct
+7.Remove the item from the shopping cart.
+--------------------------
+
+===============================================
+Default Suite
+Total tests run: 2, Passes: 2, Failures: 0, Skips: 0
+===============================================
+
+
+Process finished with exit code 0
