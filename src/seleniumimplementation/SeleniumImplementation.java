@@ -19,16 +19,6 @@ public class SeleniumImplementation
         Select pagesize = new Select(selectProductsPagesize);
         pagesize.selectByVisibleText(text);
     }
-
-    public void refresh (WebDriver driver)
-    {
-        driver.navigate().refresh();
-    }
-
-    public void timeout (WebDriver driver)
-    {
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-    }
     public boolean validateText (WebDriver driver, WebElement element, String expectedText)
     {
         String observedText = element.getText();

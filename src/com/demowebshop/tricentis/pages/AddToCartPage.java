@@ -39,27 +39,18 @@ public class AddToCartPage
 
     public boolean validateAddToCart(WebDriver driver)
     {
-        System.out.println("BMC Test Task. \nSelenium WebDriver UI \nPart -A- \nAdd to Cart test: ");
         selenium.click(computers);
-        System.out.println("1.In the categories menu open Computer");
         selenium.click(desktops);
-        System.out.println("2.Select Desktops");
         selenium.selectByVisibleText(selectProductsPagesize, "4");
-        System.out.println("3.Set Display to \"4\" per page");
         List<WebElement> list = driver.findElements(By.className("item-box"));
         int itemsCount = list.size();
-        System.out.println("4.Quantity of products displayed per page is " + itemsCount);
         selenium.selectByVisibleText(selectOrderBy, "Price: High to Low");
-        System.out.println("5.Sort \"Price: High to Low\"");
         selenium.click(theMostExpensiveComputer);
-        System.out.println("6.Click add to cart the most expensive item");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         selenium.click(AddToCartButton);
         selenium.click(shoppingCart);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         selenium.validateText(driver, cartQty, "(1)");
-        System.out.println("7.Check the item is in the shopping cart");
-        System.out.println("!!! TEST PASS !!!");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         return true;
     }
