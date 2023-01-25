@@ -12,7 +12,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="BMCTask" options="--add-exports jakarta.activation/org.openqa.selenium=ALL-UNNAMED --add-exports jakarta.activation/org.openqa.selenium.chrome=ALL-UNNAMED --add-exports jakarta.activation/org.openqa.selenium.support=ALL-UNNAMED --add-exports jakarta.activation/org.openqa.selenium.interactions=ALL-UNNAMED --add-exports jakarta.activation/org.openqa.selenium.support.ui=ALL-UNNAMED" />
+      <module name="BMCTask" options="" />
     </option>
   </component>
 </project>

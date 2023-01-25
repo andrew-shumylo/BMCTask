@@ -34,7 +34,7 @@ public class TestSuite
         Assert.assertTrue(addToCartTest.validateAddToCart(driver));
     }
     @Test
-    @Description("BMC Test Task. \nSelenium WebDriver UI \nPart -B- \nModificate product and Add to Cart test(Check & Remove)\n USING SIMPLE WAY OF IMPLEMENTATION")
+    @Description("Selenium WebDriver UI \nPart -B- \nModificate product and Add to Cart test(Check & Remove)\n USING SIMPLE WAY OF IMPLEMENTATION")
     public void ProductModificationTest()
     {
         driver.get("http://demowebshop.tricentis.com/build-your-own-expensive-computer-2");

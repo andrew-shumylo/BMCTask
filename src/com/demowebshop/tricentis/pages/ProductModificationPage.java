@@ -41,7 +41,7 @@ public class ProductModificationPage
 
     public boolean validateProductModification (WebDriver driver)
     {
-        System.out.println("BMC Test Task. \nSelenium WebDriver UI \nPart -B- " +
+        System.out.println("Selenium WebDriver UI \nPart -B- " +
                 "\nModificate product and Add to Cart test(Check & Remove): ");
         selenium.click(processorFast);
         System.out.println("1.Set Processor: Fast");

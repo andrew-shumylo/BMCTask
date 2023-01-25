@@ -13,7 +13,7 @@ public class AddToCartPage
 {
     @FindBy(xpath = "//a [@href=\"/computers\"]")
     WebElement computers;
-    @FindBy(xpath = "/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[1]/div[1]/div/h2/a")
+    @FindBy(xpath = "(//a[@title='Show products in category Desktops'][normalize-space()='Desktops'])[1]")
     WebElement desktops;
     @FindBy(id = "products-pagesize")
     WebElement selectProductsPagesize;
@@ -21,7 +21,7 @@ public class AddToCartPage
     WebElement selectOrderBy;
     @FindBy(className = "item-box")
     WebElement productsPerPage;
-    @FindBy(xpath = "/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[3]/div[1]/div/div[2]/div[3]/div[2]/input")
+    @FindBy(xpath = "//a[normalize-space()='Build your own expensive computer']")
     WebElement theMostExpensiveComputer;
     @FindBy(className = "add-to-cart-panel")
     WebElement AddToCartButton;
